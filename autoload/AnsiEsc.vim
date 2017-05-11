@@ -151,19 +151,26 @@ fun! AnsiEsc#AnsiEsc(rebuild)
     syn region ansiWhite	        start="\e\[;\=0\{0,2};\=90m"                     skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldRed	start="\e\[;\=0\{0,2};\=\%(1;31\|31;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldRed        start="\e\[;\=0\{0,2};\=91m"                     skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
+    syn region ansiBoldRed	start="\e\[;\=0\{0,2};\=\%(1;91\|91;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldGreen	start="\e\[;\=0\{0,2};\=\%(1;32\|32;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldGreen      start="\e\[;\=0\{0,2};\=92m"                     skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
+    syn region ansiBoldGreen	start="\e\[;\=0\{0,2};\=\%(1;92\|92;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldYellow	start="\e\[;\=0\{0,2};\=\%(1;33\|33;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldYellow     start="\e\[;\=0\{0,2};\=93m"                     skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
+    syn region ansiBoldYellow	start="\e\[;\=0\{0,2};\=\%(1;93\|93;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldBlue	start="\e\[;\=0\{0,2};\=\%(1;34\|34;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldBlue       start="\e\[;\=0\{0,2};\=94m"                     skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
+    syn region ansiBoldBlue	start="\e\[;\=0\{0,2};\=\%(1;94\|94;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldMagenta	start="\e\[;\=0\{0,2};\=\%(1;35\|35;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldMagenta    start="\e\[;\=0\{0,2};\=95m"                     skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
+    syn region ansiBoldMagenta	start="\e\[;\=0\{0,2};\=\%(1;95\|95;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldCyan	start="\e\[;\=0\{0,2};\=\%(1;36\|36;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldCyan       start="\e\[;\=0\{0,2};\=96m"                     skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
+    syn region ansiBoldCyan	start="\e\[;\=0\{0,2};\=\%(1;96\|96;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldWhite	start="\e\[;\=0\{0,2};\=\%(1;37\|37;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldWhite	start="\e\[;\=0\{0,2};\=\%(1;39\|39;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldWhite      start="\e\[;\=0\{0,2};\=97m"                     skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
+    syn region ansiBoldWhite	start="\e\[;\=0\{0,2};\=\%(1;97\|97;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
     syn region ansiBoldGray	start="\e\[;\=0\{0,2};\=\%(1;90\|90;0\{0,2}1\)m" skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
 
     syn region ansiStandout     	        start="\e\[;\=0\{0,2};\=\%(1;\)\=3m"                      skip='\e\[K' end="\e\["me=e-2 contains=ansiConceal
