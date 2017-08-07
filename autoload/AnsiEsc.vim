@@ -61,7 +61,9 @@ fun! AnsiEsc#AnsiEsc(rebuild)
                 exe 'menu '.g:DrChipTopLvlMenu.'AnsiEsc.Start<tab>:AnsiEsc		:AnsiEsc<cr>'
             endif
         endif
-        let &l:hl= s:hlkeep_{bufnr("%")}
+        if !has('conceal')
+            let &l:hl= s:hlkeep_{bufnr("%")}
+        endif
         "   call Dret("AnsiEsc#AnsiEsc")
         return
     else
@@ -1517,9 +1519,9 @@ fun! AnsiEsc#AnsiEsc(rebuild)
         hi def link ansiIgnore	ansiStop
         hi def link ansiStop		Ignore
         hi def link ansiExtended	Ignore
+        let s:hlkeep_{bufnr("%")}= &l:hl
+        exe "setlocal hl=".substitute(&hl,'8:[^,]\{-},','8:Ignore,',"")
     endif
-    let s:hlkeep_{bufnr("%")}= &l:hl
-    exe "setlocal hl=".substitute(&hl,'8:[^,]\{-},','8:Ignore,',"")
 
     " handle 3 or more element ansi escape sequences by building syntax and highlighting rules
     " specific to the current file
